@@ -26,15 +26,12 @@ cd laravel-scout-extended
 # Install dependencies
 composer install
 
-# Copy .env file as .env.example
-cp .env.example .env
-
 # Add your credential in .env
 ALGOLIA_APP_ID='YOUR APPLICATION ID'
 ALGOLIA_SECRET='YOUR ADMIN API KEY'
 
-# Add all objects to you index using scout-extend 
-php artisan scout:import
+# Populate your Database and your index 
+composer update
 
 # See the search query 
 php aristan serve 
