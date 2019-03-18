@@ -1,11 +1,11 @@
 {
-    "name": "algolia/algoliasearch-client-php-playground",
+    "name": "algolia/api-clients-playground",
     "keywords": ["algolia", "php", "playground"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Nuno Maduro",
-            "email": "enunomaduro@gmail.com"
+            "name": "Algolia Team",
+            "email": "support@algolia.com"
         }
     ],
     "require": {
