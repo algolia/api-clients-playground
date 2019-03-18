@@ -13,7 +13,7 @@
 use \App\Article;
 
 Route::get('/', function () {
-
-    $articles = Article::all();
+    $query = (string) request('query');
+    $articles = Article::search($query)->get();
     return $articles;
 });
