@@ -12,7 +12,6 @@ First, use [Homebrew](https://brew.sh) to install Python 3.7:
 # Install Python 3
 brew install python3
 
-# Create your Python project directory
 cd python
 
 # Create a Python Virtual Environment inside your directory
