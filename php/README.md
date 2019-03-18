@@ -7,7 +7,7 @@ git clone https://github.com/algolia/api-clients-playground
 ```
 
 ```bash
-cd php && composer install
+cd api-clients-playground/php && composer install
 ```
 
 ## Usage
