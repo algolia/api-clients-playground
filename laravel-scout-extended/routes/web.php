@@ -10,7 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use \App\Article;
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $articles = Article::all();
+    return $articles;
 });
