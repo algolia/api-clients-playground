@@ -62,10 +62,5 @@ public function searchableAs()
 }
 ```
 
-Feel free to play ! 
-
-Here is the documentation to have all the possibility you want for scout-extended [Scout-Extended](https://www.algolia.com/doc/framework-integration/laravel/getting-started/introduction-to-scout-extended/)
-
-Enjoy ! 
  
 
