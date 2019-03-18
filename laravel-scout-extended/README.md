@@ -42,15 +42,6 @@ php aristan serve
 ```
 > See the result of the query here : [localhost](http://localhost:8000/)
 
-*if you want to send them to a specific index*
-
-Add this method to **App/Article.php**
-```
-public function searchableAs()
-{
-    return 'Your Index';
-}
-```
 
  
 
