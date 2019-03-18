@@ -33,20 +33,10 @@ cp .env.example .env
 ALGOLIA_APP_ID='YOUR APPLICATION ID'
 ALGOLIA_SECRET='YOUR ADMIN API KEY'
 
-# Move to database directory and create database.sqlite
-cd database && touch database.sqlite
-
-# Go back and migrate database
-php artisan migrate 
-
-# Populated it.
-php artisan db:seed
-
 # Add all objects to you index using scout-extend 
 php artisan scout:import
 
 # See the search query 
-
 php aristan serve 
 
 ```
