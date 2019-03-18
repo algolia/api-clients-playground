@@ -9,10 +9,12 @@ Algolia's API Client Python was created by, and is maintained by [Algolia](https
 
 First, use [Homebrew](https://brew.sh) to install Python 3.7:
 ```bash
+# Clone the repository
+git clone https://github.com/algolia/api-clients-playground
+cd api-clients-playground/python
+
 # Install Python 3
 brew install python3
-
-cd python
 
 # Create a Python Virtual Environment inside your directory
 python3 -m venv venv
