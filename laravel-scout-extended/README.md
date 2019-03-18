@@ -16,8 +16,8 @@ First, follow Laravel's tutorial to install it.
 
 Then: 
 
-```
-# Install from Algolia's Playground from Github
+```bash
+#Install from Algolia's Playground from Github
 git clone https://github.com/algolia/api-clients-playground
 
 # Move to Laravel-scout-extended folder.
