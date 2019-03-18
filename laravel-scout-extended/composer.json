@@ -58,6 +58,11 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "post-update-cmd": [
+            "touch database/database.sqlite",
+            "@php artisan migrate",
+            "@php artisan db:seed"
         ]
     }
 }
