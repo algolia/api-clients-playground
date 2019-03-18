@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "19f96a5bf9c966cb0b1d2fde4ed2d31e",
+    "content-hash": "b1fd5b47a598b3edcbce04014f0960eb",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -76,7 +76,7 @@
         },
         {
             "name": "algolia/scout-extended",
-            "version": "dev-master",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/algolia/scout-extended.git",
@@ -4703,9 +4703,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "algolia/scout-extended": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
