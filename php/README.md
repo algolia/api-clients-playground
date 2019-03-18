@@ -3,11 +3,11 @@
 > **Requires [PHP 7.2+](https://php.net/releases/)**
 
 ```bash
-git clone https://github.com/algolia/algoliasearch-client-php-playground
+git clone https://github.com/algolia/api-clients-playground
 ```
 
 ```bash
-cd algoliasearch-client-php-playground && composer update
+cd php && composer install
 ```
 
 ## Usage
