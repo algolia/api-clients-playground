@@ -10,10 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-use \App\Article;
+
+use App\Article;
 
 Route::get('/', function () {
     $query = (string) request('query');
+
     $articles = Article::search($query)->get();
+
     return $articles;
 });
