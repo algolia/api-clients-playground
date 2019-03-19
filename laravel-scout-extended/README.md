@@ -7,8 +7,6 @@ Algolia Scout-extended was created by and maintained by [Algolia](https://github
 >requires :
 * [Composer](https://getcomposer.org/)
 * [Laravel](https://laravel.com/)
-
-
 ```bash
 #Install from Algolia's Playground from Github
 git clone https://github.com/algolia/api-clients-playground
