@@ -1,9 +1,6 @@
 # About Algolia's Scout-Extended
-
 Algolia Scout-extended was created by and maintained by [Algolia](https://github.com/algolia). The Algolia Search API Client for Laravel. 
-
 ## Get started locally
-
 >requires :
 * [Composer](https://getcomposer.org/)
 * [Laravel](https://laravel.com/)
@@ -29,7 +26,6 @@ php artisan scout:import
 
 # See the search query 
 php artisan serve 
-
 ```
 > See the result of the query here : [localhost](http://localhost:8000/)
 
