@@ -21,7 +21,7 @@ Then:
 git clone https://github.com/algolia/api-clients-playground
 
 # Move to Laravel-scout-extended folder.
-cd laravel-scout-extended 
+cd api-clients-playground/laravel-scout-extended 
 
 # Install dependencies
 composer install
@@ -30,11 +30,14 @@ composer install
 ALGOLIA_APP_ID='YOUR APPLICATION ID'
 ALGOLIA_SECRET='YOUR ADMIN API KEY'
 
-# Populate your Database and your index 
-composer update
+# Populate your Database
+php artisan db:seed
+
+#Populate your index
+php artisan scout:import
 
 # See the search query 
-php aristan serve 
+php artisan serve 
 
 ```
 > See the result of the query here : [localhost](http://localhost:8000/)

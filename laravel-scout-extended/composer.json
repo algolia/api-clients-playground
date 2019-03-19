@@ -60,10 +60,6 @@
             "touch database/database.sqlite",
             "cp .env.example .env",
             "@php artisan migrate"
-        ],
-        "post-update-cmd": [
-            "@php artisan db:seed",
-            "@php artisan scout:import"
         ]
     }
 }
