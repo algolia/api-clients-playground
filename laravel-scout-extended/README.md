@@ -9,13 +9,6 @@ Algolia Scout-extended was created by and maintained by [Algolia](https://github
 * [Laravel](https://laravel.com/)
 
 
-
-First, follow Laravel's tutorial to install it. 
-
->[Laravel tutorial](https://laravel.com/docs/5.8/installation) 
-
-Then: 
-
 ```bash
 #Install from Algolia's Playground from Github
 git clone https://github.com/algolia/api-clients-playground
