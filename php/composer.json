@@ -1,0 +1,23 @@
+{
+    "name": "algolia/api-clients-playground",
+    "keywords": ["algolia", "php", "playground"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Algolia Team",
+            "email": "support@algolia.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "algolia/algoliasearch-client-php": "^2.2",
+        "nunomaduro/collision": "^2.1",
+        "symfony/var-dumper": "^4.1"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist"
+    }
+}

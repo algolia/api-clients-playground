@@ -9,11 +9,12 @@ Algolia's API Client Python was created by, and is maintained by [Algolia](https
 
 First, use [Homebrew](https://brew.sh) to install Python 3.7:
 ```bash
+# Clone the repository
+git clone https://github.com/algolia/api-clients-playground
+cd api-clients-playground/python
+
 # Install Python 3
 brew install python3
-
-# Create your Python project directory
-cd python
 
 # Create a Python Virtual Environment inside your directory
 python3 -m venv venv
@@ -65,40 +66,34 @@ pip install 'asyncio>=3.4,<4.0' 'aiohttp>=2.0,<4.0' 'async_timeout>=2.0,<4.0'
 
 
 ```py
+import asyncio
 import os
 
 from algoliasearch.search_client import SearchClient
 from algoliasearch.exceptions import AlgoliaException
 from algoliasearch.responses import MultipleResponse
 
-client = SearchClient.create(
-    os.environ.get('ALGOLIA_APPLICATION_ID_1'),
-    os.environ.get('ALGOLIA_ADMIN_KEY_1')
-)
+app_id = os.environ.get('ALGOLIA_APPLICATION_ID_1')
+api_key = os.environ.get('ALGOLIA_ADMIN_KEY_1')
 
-index = client.init_index('articles')
 
-try:
-    index.clear_objects().wait()
-except AlgoliaException:  # Index not found
-    pass
+async def main():
+    async with SearchClient.create(app_id, api_key) as client:
+        index = client.init_index('articles')
 
-import asyncio
+        try:
+            (await index.clear_objects_async()).wait()
+        except AlgoliaException:  # Index not found
+            pass
 
-loop = asyncio.get_event_loop()
+        results = await asyncio.gather(
+            index.save_object_async({'objectID': 1, 'foo': 'bar'}),
+            index.save_object_async({'objectID': 2, 'foo': 'foo'})
+        )
 
-tasks = [
-    index.save_object_async({'objectID': 1, 'foo': 'bar'}),
-    index.save_object_async({'objectID': 2, 'foo': 'bar'}),
-]
+        MultipleResponse(results).wait()
 
-MultipleResponse(
-    loop.run_until_complete(asyncio.gather(*tasks))
-).wait()
+        print(await index.search_async(''))
 
-result = loop.run_until_complete(index.search_async(''))
-
-loop.close()
-
-print(result)
+asyncio.run(main())
 ```
