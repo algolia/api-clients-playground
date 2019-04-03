@@ -55,7 +55,7 @@ public class Main {
       CompletableFuture<SearchResult<Employee>> searchAmazonFuture =
               index.searchAsync(new Query("amazon"));
 
-      CompletableFuture.allOf(searchAlgoliaFuture, searchAppleFuture, searchAmazonFuture);
+      CompletableFuture.allOf(searchAlgoliaFuture, searchAppleFuture, searchAmazonFuture).join();
 
       System.out.println(searchAlgoliaFuture.get().getHits().get(0).getName());
       System.out.println(searchAppleFuture.get().getHits().get(0).getName());
