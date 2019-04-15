@@ -1,15 +1,18 @@
 # About Algolia's Scout-Extended
-Algolia Scout-extended was created by and maintained by [Algolia](https://github.com/algolia). The Algolia Search API Client for Laravel. 
+
+Algolia Scout-extended was created by, and is maintained by [Algolia](https://github.com/algolia).
+
 ## Get started locally
->requires :
+> requires :
 * [Composer](https://getcomposer.org/)
-* [Laravel](https://laravel.com/)
+* [PHP 7.1.3+](https://www.php.net/releases/index.php)
+
 ```bash
-#Install from Algolia's Playground from Github
+# Install from Algolia's Playground from Github
 git clone https://github.com/algolia/api-clients-playground
 
 # Move to Laravel-scout-extended folder.
-cd api-clients-playground/laravel-scout-extended 
+cd api-clients-playground/laravel-scout-extended
 
 # Install dependencies
 composer install
@@ -18,17 +21,16 @@ composer install
 ALGOLIA_APP_ID='YOUR APPLICATION ID'
 ALGOLIA_SECRET='YOUR ADMIN API KEY'
 
-# Populate your Database
-php artisan db:seed
+# Your database already exists, so you just need to create data and send it to Algolia
+php artisan db:seed && php artisan scout:import
 
-#Populate your index
-php artisan scout:import
-
-# See the search query 
-php artisan serve 
+# See the search query
+php artisan serve
 ```
-> See the result of the query here : [localhost](http://localhost:8000/)
+
+> See the result of the query here : [localhost](http://127.0.0.1:8000)
+> Perform search queries with the `query` param : http://127.0.0.1:8000?query=foo
 
 
- 
+
 
