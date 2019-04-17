@@ -21,7 +21,7 @@ public class Main {
 
     // Create a SearchClient (it's a Closeable, so you can leverage the try-with-resources construction
     // to let the JVM close underlying resources when appropriate)
-    try (SearchClient searchClient = new SearchClient(ALGOLIA_APPLICATION_ID_1, ALGOLIA_API_KEY_1)) {
+    try (SearchClient searchClient = DefaultSearchClient.create(ALGOLIA_APPLICATION_ID_1, ALGOLIA_API_KEY_1)) {
 
       // Init an index
       SearchIndex<Employee> index =

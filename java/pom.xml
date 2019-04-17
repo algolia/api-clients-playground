@@ -24,10 +24,18 @@
     <dependencies>
         <dependency>
             <groupId>com.algolia</groupId>
-            <artifactId>algoliasearch</artifactId>
-            <version>3.0</version>
+            <artifactId>algoliasearch-core</artifactId>
+            <version>3.0.0-beta-1</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/algoliasearch-3.0.0-SNAPSHOT.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/resources/algoliasearch-core-3.0.0-beta-1.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.algolia</groupId>
+            <artifactId>algoliasearch-apache</artifactId>
+            <version>3.0.0-beta-1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/algoliasearch-apache-3.0.0-beta-1.jar</systemPath>
         </dependency>
 
         <dependency>
