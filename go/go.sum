@@ -1,0 +1,8 @@
+github.com/algolia/algoliasearch-client-go v0.0.0-20190409094142-b60d13f65ed3 h1:7d00rz9sX8paJVW/alOO6kalyI0rIELq6Ka+KlOgu+8=
+github.com/algolia/algoliasearch-client-go v0.0.0-20190409094142-b60d13f65ed3/go.mod h1:O3hhXUchKRH3qS/2tJ+/NGFwQL6Kv1IQ5xG0Qsxa5xU=
+github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
+github.com/stretchr/objx v0.1.1/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
+github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
