@@ -1,4 +1,6 @@
 import java.io.Serializable;
+import java.util.Arrays;
+import java.util.List;
 
 public class Employee implements Serializable {
 
@@ -39,4 +41,21 @@ public class Employee implements Serializable {
   private String company;
   private String name;
   private String queryID;
+
+  public static List<Employee> hireEmployees() {
+    return Arrays.asList(
+        new Employee("Algolia", "Julien Lemoine"),
+        new Employee("Algolia", "Julien Lemoine"),
+        new Employee("Amazon", "Jeff Bezos"),
+        new Employee("Apple", "Steve Jobs"),
+        new Employee("Apple", "Steve Wozniak"),
+        new Employee("Arista Networks", "Jayshree Ullal"),
+        new Employee("Google", "Lary Page"),
+        new Employee("Google", "Rob Pike"),
+        new Employee("Google", "Sergueï Brin"),
+        new Employee("Microsoft", "Bill Gates"),
+        new Employee("SpaceX", "Elon Musk"),
+        new Employee("Tesla", "Elon Musk"),
+        new Employee("Yahoo", "Marissa Mayer"));
+  }
 }
