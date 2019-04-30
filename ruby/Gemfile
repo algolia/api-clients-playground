@@ -1,0 +1,5 @@
+source "https://rubygems.org"
+
+# See https://github.com/algolia/algoliasearch-client-ruby 
+ gem "algoliasearch", ">=1.26"
+ gem 'dotenv'
