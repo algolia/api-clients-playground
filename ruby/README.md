@@ -5,7 +5,8 @@ Algolia's API Client ruby was created by, and is maintained by [Algolia](https:/
 ## Get started locally
 
 > **Requires:**
-- **[bundle](https://bundler.io/)**
+- **[Ruby > 1.8.7](https://www.ruby-lang.org)**
+- **[Bundle](https://bundler.io/)**
 
 First, use *bundle* to playground dependencies:
 ```bash
