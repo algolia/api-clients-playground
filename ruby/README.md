@@ -1,4 +1,4 @@
-# About Algolia's API Client Javascript
+# About Algolia's API Client Ruby
 
 Algolia's API Client ruby was created by, and is maintained by [Algolia](https://github.com/algolia). The Algolia Search API Client for Ruby lets you easily use the Algolia Search REST API from your ruby code.
 
