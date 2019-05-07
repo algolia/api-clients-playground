@@ -20,7 +20,7 @@ class ArticleRepository extends ServiceEntityRepository
     }
 
     // /**
-    //  * @return Article2[] Returns an array of Article2 objects
+    //  * @return Article[] Returns an array of Article objects
     //  */
     /*
     public function findByExampleField($value)
