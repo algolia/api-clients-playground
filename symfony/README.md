@@ -21,7 +21,7 @@ composer install
 ALGOLIA_APP_ID='YOUR APPLICATION ID'
 ALGOLIA_SECRET='YOUR ADMIN API KEY'
 
-# Your database already exists, so you just need to create data and send it to Algolia
+# Your database doesn't exists, so you just need to create one and load data then send it to Algolia
 composer update
 
 # See the search query
