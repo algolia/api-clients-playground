@@ -17,6 +17,9 @@ cd api-clients-playground/symfony
 # Install dependencies
 composer install
 
+# Configure your database drive for sqlite in .env
+DATABASE_URL=sqlite:///%kernel.project_dir%/var/data.db
+
 # Generate migration file
 php bin/console make:migration
 
