@@ -29,7 +29,6 @@ php bin/console server:run
 ```
 
 > See the result of the query here : [localhost](http://127.0.0.1:8000)
-> Perform search queries with the `query` param : http://127.0.0.1:8000?query=foo
 
 
 
