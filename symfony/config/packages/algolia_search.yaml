@@ -1,0 +1,7 @@
+# All available configuration can be found here:
+# https://www.algolia.com/doc/api-client/symfony/configuration/
+algolia_search:
+    indices:
+        - name: articles
+          class: App\Entity\Article
+
