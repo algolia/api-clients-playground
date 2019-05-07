@@ -4,12 +4,12 @@ namespace App\Controller;
 
 use App\Entity\Article;
 use Algolia\SearchBundle\IndexManagerInterface;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 class ArticleController
 {
 
-    protected $indexManager;
+    private $indexManager;
 
     public function __construct(IndexManagerInterface $indexingManager)
     {
@@ -19,8 +19,7 @@ class ArticleController
     public function index()
     {
         $articles = $this->indexManager->rawSearch('', Article::class);
-        var_dump($articles);
-        $response = new Response();
-        return $response;
+
+        return new JsonResponse($articles);
     }
 }

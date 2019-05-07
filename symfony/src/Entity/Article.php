@@ -31,7 +31,7 @@ class Article
 
     /**
      * @Groups({"searchable"})
-     * @ORM\Column(type="integer", nullable=true)
+     * @ORM\Column(type="integer")
      */
     private $likesCount;
 

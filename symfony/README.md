@@ -17,19 +17,24 @@ cd api-clients-playground/symfony
 # Install dependencies
 composer install
 
+# Generate migration file
+php bin/console make:migration
+
+# Migrate you database in you local storage
+php bin/console doctrine:migrations:migrate
+
 # Add your credential in .env
 ALGOLIA_APP_ID='YOUR APPLICATION ID'
 ALGOLIA_SECRET='YOUR ADMIN API KEY'
 
-# Your database doesn't exists, so you just need to create one and load data then send it to Algolia
-composer update
+# Fill you local database
+php bin/console doctrine:fixtures:load
+
+# Import your data to algolia
+php bin/console search:import    
 
 # See the search query
 php bin/console server:run
 ```
 
 > See the result of the query here : [localhost](http://127.0.0.1:8000)
-
-
-
-
