@@ -35,12 +35,12 @@ class Article
      */
     private $likesCount;
 
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
 
-    public function getTitle(): ?string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -52,7 +52,7 @@ class Article
         return $this;
     }
 
-    public function getAuthor(): ?string
+    public function getAuthor(): string
     {
         return $this->author;
     }
@@ -64,12 +64,12 @@ class Article
         return $this;
     }
 
-    public function getLikesCount(): ?int
+    public function getLikesCount():int
     {
         return $this->likesCount;
     }
 
-    public function setLikesCount(?int $likesCount): self
+    public function setLikesCount(int $likesCount): self
     {
         $this->likesCount = $likesCount;
 

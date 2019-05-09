@@ -8,7 +8,6 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 
 class ArticleController
 {
-
     private $indexManager;
 
     public function __construct(IndexManagerInterface $indexingManager)
