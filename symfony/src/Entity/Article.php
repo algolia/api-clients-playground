@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
+
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ArticleRepository")
  */
@@ -64,7 +65,7 @@ class Article
         return $this;
     }
 
-    public function getLikesCount():int
+    public function getLikesCount(): int
     {
         return $this->likesCount;
     }
