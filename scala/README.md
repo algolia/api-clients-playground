@@ -1,11 +1,10 @@
 # Algolia's Scala playground
 
-
 ## Requirements
 
-- JDK 8 or above
-- Scala 2.12 or above
-- SBT
+- [JDK8 or above](https://openjdk.java.net/install/)
+- [Scala 2.12 or above](https://www.scala-lang.org/download/)
+- [SBT](https://www.scala-lang.org/download/)
 
 ## Using the playground
 
@@ -18,7 +17,6 @@ Open `Main.scala` in Intellij and run the Main object.
 ### From sbt
 
 To run the playground from sbt:
-
 
 ```bash
 sbt compile
