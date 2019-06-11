@@ -15,7 +15,7 @@ go version
 go mod init playground
 
 # Fetch the Go client as a dependency
-go get github.com/algolia/algoliasearch-client-go@v3.0.0-beta05
+go get github.com/algolia/algoliasearch-client-go@v3.0.0
 ```
 
 ## Compile and run
