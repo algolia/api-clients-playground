@@ -49,29 +49,25 @@ namespace AlgoliaConsole
             SearchClient client = new SearchClient(_appKey, _apiKey);
 
             // Init index
-            SearchIndex index = client.InitIndex("TestSupport");
+            SearchIndex index = client.InitIndex("AlgoliaDotnetConsole");
 
-            // Get data 
-            var locationToUpdate = new Location
+            // Push data from Json
+            using (StreamReader re = File.OpenText("Datas/Actors.json"))
+            using (JsonTextReader reader = new JsonTextReader(re))
             {
-                ObjectID = "Locations/18912",
-                LocationID = "2",
-                CatalogID = "1",
-                PropertyID = "3"
-            };
-
-            for (int i = 0; i < 50; i++)
-            {
-                locationToUpdate.LocationID = i.ToString();
-                var operations = new List<BatchOperation<Location>>{
-                new BatchOperation<Location>{ Action = BatchActionType.UpdateObject, IndexName = "TestSupport", Body = locationToUpdate }
-            };
-
-                await client.MultipleBatchAsync(operations);
+                JArray batch = JArray.Load(reader);
+                var ret = await index.SaveObjectsAsync(batch);
+                ret.Wait();
             }
 
+            // Get data 
+            var actor = await index.GetObjectAsync<Actor>("551486310");
+            Console.WriteLine(actor.ToString());
 
-
+            // Search
+            var search = await index.SearchAsync<Actor>(new Query("monica"));
+            Console.WriteLine(search.Hits.ElementAt(0).ToString());
+            Environment.Exit(0);
         }
 
         static void InitKeys()
@@ -90,20 +86,6 @@ namespace AlgoliaConsole
 
             _appKey = Environment.GetEnvironmentVariable("ALGOLIA_APPLICATION_ID");
             _apiKey = Environment.GetEnvironmentVariable("ALGOLIA_ADMIN_API_KEY");
-        }
-
-        public class Location
-        {
-            public string ObjectID { get; set; }
-
-            [JsonProperty(PropertyName = "LocationId")]
-            public string LocationID { get; set; }
-
-            [JsonProperty(PropertyName = "PropertyId")]
-            public string PropertyID { get; set; }
-
-            [JsonProperty(PropertyName = "CatalogId")]
-            public string CatalogID { get; set; }
         }
 
     }
