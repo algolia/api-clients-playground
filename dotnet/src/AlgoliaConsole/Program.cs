@@ -21,15 +21,11 @@
 * THE SOFTWARE.
 */
 
-using Algolia.Search;
 using Algolia.Search.Clients;
-using Algolia.Search.Models.Batch;
-using Algolia.Search.Models.Enums;
 using Algolia.Search.Models.Search;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -72,13 +68,13 @@ namespace AlgoliaConsole
 
         static void InitKeys()
         {
-            if (String.IsNullOrEmpty(Environment.GetEnvironmentVariable("ALGOLIA_APPLICATION_ID")))
+            if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("ALGOLIA_APPLICATION_ID")))
             {
                 Console.WriteLine("Please set the following environment variable : ALGOLIA_APPLICATION_ID");
                 Environment.Exit(1);
             }
 
-            if (String.IsNullOrEmpty(Environment.GetEnvironmentVariable("ALGOLIA_ADMIN_API_KEY")))
+            if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("ALGOLIA_ADMIN_API_KEY")))
             {
                 Console.WriteLine("Please set the following environment variable : ALGOLIA_ADMIN_API_KEY");
                 Environment.Exit(1);
