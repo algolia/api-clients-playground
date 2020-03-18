@@ -4,7 +4,7 @@
 # Install go
 brew install go
 
-# Make sure that you are using the latest version of Go (at least 1.8 >=)
+# Make sure that you are using the latest version of Go (at least 1.14 >=)
 go version
 ```
 
@@ -15,7 +15,7 @@ go version
 go mod init playground
 
 # Fetch the Go client as a dependency
-go get github.com/algolia/algoliasearch-client-go@v3.0.0
+go get github.com/algolia/algoliasearch-client-go/v3@v3.6.0
 ```
 
 ## Compile and run
