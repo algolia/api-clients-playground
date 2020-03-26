@@ -5,14 +5,15 @@ var apiKey = '';
 var indexName = '';
 
 const client = algoliasearch(applicationId, apiKey);
-const index = client.initIndex(indexName)
+const index = client.initIndex(indexName);
 
-index.search({
-  query: ''
-  },
-  (err, { hits } = {}) => {
-    if (err) throw err;
+(async function () {
+    try {
+        const results = await index.search();
+        console.log(results);
+    } catch (e) {
+        console.log(e);
+        throw e;
+    }
+})();
 
-    console.log(hits);
-  }
-);
