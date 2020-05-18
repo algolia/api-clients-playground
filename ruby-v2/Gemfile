@@ -1,0 +1,3 @@
+# frozen_string_literal: true
+
+gem 'algolia', git: 'https://github.com/algolia/algoliasearch-client-ruby.git', branch: 'release/v2'
