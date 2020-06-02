@@ -2,23 +2,27 @@
 
 namespace App\Controller;
 
+use Algolia\SearchBundle\SearchService;
 use App\Entity\Article;
-use Algolia\SearchBundle\IndexManagerInterface;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
-class ArticleController
+class ArticleController extends AbstractController
 {
-    private $indexManager;
+    private $searchService;
 
-    public function __construct(IndexManagerInterface $indexingManager)
+    public function __construct(SearchService $searchService)
     {
-        $this->indexManager = $indexingManager;
+        $this->searchService = $searchService;
     }
 
-    public function index()
+    /**
+     * @return JsonResponse
+     */
+    public function index(): JsonResponse
     {
-        $articles = $this->indexManager->rawSearch('', Article::class);
+        $result = $this->searchService->rawSearch(Article::class, '');
 
-        return new JsonResponse($articles);
+        return new JsonResponse($result);
     }
 }
