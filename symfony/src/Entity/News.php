@@ -19,7 +19,6 @@ class News extends Aggregator
     public static function getEntities()
     {
         return [
-            Post::class,
             Article::class,
         ];
     }

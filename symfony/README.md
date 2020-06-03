@@ -11,7 +11,7 @@ Algolia Symfony bundle was created by, and is maintained by [Algolia](https://gi
 # Install from Algolia's Playground from Github
 git clone https://github.com/algolia/api-clients-playground
 
-# Move to Laravel-scout-extended folder.
+# Move to Symfony folder.
 cd api-clients-playground/symfony
 
 # Install dependencies
