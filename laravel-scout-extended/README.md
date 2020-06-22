@@ -22,7 +22,7 @@ ALGOLIA_APP_ID='YOUR APPLICATION ID'
 ALGOLIA_SECRET='YOUR ADMIN API KEY'
 
 # Your database already exists, so you just need to create data and send it to Algolia
-php artisan db:seed && php artisan scout:import
+php artisan migrate --seed && php artisan scout:import
 
 # See the search query
 php artisan serve
