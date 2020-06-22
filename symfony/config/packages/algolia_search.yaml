@@ -4,4 +4,3 @@ algolia_search:
   indices:
     - name: articles
       class: App\Entity\Article
-

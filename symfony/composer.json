@@ -12,14 +12,13 @@
     "algolia/search-bundle": "^4.0",
     "symfony/console": "^5.0",
     "symfony/dotenv": "^5.0",
-    "symfony/flex": "^1.1",
+    "symfony/flex": "^1.8.4",
     "symfony/orm-pack": "^1.0",
     "symfony/yaml": "^5.0"
   },
   "require-dev": {
     "doctrine/doctrine-fixtures-bundle": "^3.1",
-    "phpunit/phpunit": "^8.4",
-    "roave/security-advisories": "dev-master",
+    "phpunit/phpunit": "^9.1",
     "symfony/maker-bundle": "^1.11",
     "symfony/phpunit-bridge": "^5.0",
     "symfony/web-server-bundle": "^4.4"
