@@ -4,7 +4,7 @@
 
 You can skip this part if you already have the .NET framework installed.
 
-### .NET Core SDK 2.x
+### .NET Core SDK 3.x
 
 Download and install the .NET Core SDK from [.NET Downloads](https://www.microsoft.com/net/download/core). 
 
@@ -19,7 +19,7 @@ dotnet --version
 You should have something like this depending on the version you have installed :
 
 ```shell
-2.1.402
+3.XX.XX
 ```
 
 If you have the following message `dotnet command not found`. Please run the following command :
