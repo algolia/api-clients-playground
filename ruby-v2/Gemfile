@@ -1,5 +1,4 @@
 source "https://rubygems.org"
 
 # See https://github.com/algolia/algoliasearch-client-ruby 
-gem 'algolia', git: 'https://github.com/algolia/algoliasearch-client-ruby.git', tag: 'v2.0.0-alpha.1'
-
+gem 'algolia', git: 'https://github.com/algolia/algoliasearch-client-ruby.git', tag: '2.0.0-alpha.4'
