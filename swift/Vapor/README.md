@@ -36,12 +36,11 @@ func saveObjects<T: Encodable>(
     autoGeneratingObjectID: autoGeneratingObjectID,
     requestOptions: requestOptions,
     completion: { result in
-      if case .success = result {
+      switch result {
+      case .success:
         promise.succeed(())
-      } else if case .failure(let error) = result {
+      case .failure(let error):
         promise.fail(error)
-      } else {
-        promise.fail(AlgoliaClientError.unknown)
       }
     })
   return promise.futureResult

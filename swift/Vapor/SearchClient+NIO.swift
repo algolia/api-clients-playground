@@ -31,12 +31,11 @@ extension Index {
       autoGeneratingObjectID: autoGeneratingObjectID,
       requestOptions: requestOptions,
       completion: { result in
-        if case .success = result {
+        switch result {
+        case .success:
           promise.succeed(())
-        } else if case .failure(let error) = result {
+        case .failure(let error):
           promise.fail(error)
-        } else {
-          promise.fail(AlgoliaClientError.unknown)
         }
       })
     return promise.futureResult
@@ -68,12 +67,11 @@ extension Index {
       forwardToReplicas: forwardToReplicas,
       requestOptions: requestOptions,
       completion: { result in
-        if case .success = result {
+        switch result {
+        case .success:
           promise.succeed(())
-        } else if case .failure(let error) = result {
+        case .failure(let error):
           promise.fail(error)
-        } else {
-          promise.fail(AlgoliaClientError.unknown)
         }
       })
     return promise.futureResult
@@ -91,12 +89,11 @@ extension Index {
   {
     let promise = eventLoop.makePromise(of: Void.self)
     self.delete(completion: { result in
-      if case .success = result {
+      switch result {
+      case .success:
         promise.succeed(())
-      } else if case .failure(let error) = result {
+      case .failure(let error):
         promise.fail(error)
-      } else {
-        promise.fail(AlgoliaClientError.unknown)
       }
     })
     return promise.futureResult
@@ -108,12 +105,11 @@ extension Index {
   func exists(on eventLoop: EventLoop) -> Future<Bool> {
     let promise = eventLoop.makePromise(of: Bool.self)
     self.exists(completion: { result in
-      if case .success(let response) = result {
-        promise.succeed(response)
-      } else if case .failure(let error) = result {
+      switch result {
+      case .success:
+        promise.succeed(())
+      case .failure(let error):
         promise.fail(error)
-      } else {
-        promise.fail(AlgoliaClientError.unknown)
       }
     })
     return promise.futureResult
