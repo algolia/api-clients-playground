@@ -1,8 +1,7 @@
-require 'algoliasearch'
+require 'algolia'
 
-Algolia.init(application_id: 'ALGOLIA_APP_ID',
-             api_key:        'ALGOLIA_SECRET')
-index = Algolia::Index.new('INDEX_NAME')
+client = Algolia::Search::Client.create('ALGOLIA_APPLICATION_ID','ALGOLIA_ADMIN_KEY')
+index = client.init_index('index_name')
 
 res = index.search('')
 puts res

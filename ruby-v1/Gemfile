@@ -1,4 +1,5 @@
 source "https://rubygems.org"
 
 # See https://github.com/algolia/algoliasearch-client-ruby 
-gem 'algolia', '~> 2.0'
+ gem "algoliasearch", ">=1.26"
+
