@@ -1,3 +1,21 @@
-build/
-gradle/
-.gradle/
+# Gradle
+.gradle
+build
+local.properties
+reports
+.bin
+
+# IntelliJ IDEA
+.idea
+*.iml
+*.ipl
+*.iws
+classes/
+idea-classes/
+coverage-error.log
+
+# Finder
+.DS_Store
+
+# Java
+*.hprof
