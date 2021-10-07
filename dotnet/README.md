@@ -2,7 +2,7 @@
 
 ## .NET environment setup
 
-You can skip this part if you already have the .NET framework installed.
+You can skip this part if you already have the .NET Core 3.x framework installed.
 
 ### .NET Core SDK 3.x
 
@@ -52,5 +52,5 @@ dotnet build
 Then, run the project
 
 ```shell
-dotnet run
+ALGOLIA_APPLICATION_ID=<YOUR_APP_ID> ALGOLIA_ADMIN_API_KEY=<YOUR_API_KEY> dotnet run
 ```
