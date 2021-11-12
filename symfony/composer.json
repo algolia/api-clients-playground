@@ -17,6 +17,7 @@
     "symfony/console": "^5.0",
     "symfony/dotenv": "^5.0",
     "symfony/flex": "^1.17.2",
+    "symfony/runtime": "5.*",
     "symfony/yaml": "^5.0"
   },
   "require-dev": {
