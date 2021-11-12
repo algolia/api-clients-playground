@@ -319,22 +319,22 @@
         ]
     },
     "symfony/framework-bundle": {
-        "version": "5.1",
+        "version": "5.3",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "master",
-            "version": "5.1",
-            "ref": "20148abf61a454d2c045931d20e6418c729a675a"
+            "version": "5.3",
+            "ref": "414ba00ad43fa71be42c7906a551f1831716b03c"
         },
         "files": [
-            "config/packages/cache.yaml",
             "config/packages/framework.yaml",
-            "config/packages/test/framework.yaml",
-            "config/routes/dev/framework.yaml",
+            "config/packages/cache.yaml",
             "config/services.yaml",
+            "config/preload.php",
+            "config/routes/framework.yaml",
             "public/index.php",
-            "src/Controller/.gitignore",
-            "src/Kernel.php"
+            "src/Kernel.php",
+            "src/Controller/.gitignore"
         ]
     },
     "symfony/http-client-contracts": {
