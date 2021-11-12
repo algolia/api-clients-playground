@@ -3,12 +3,12 @@
         "version": "2.6.1"
     },
     "algolia/search-bundle": {
-        "version": "3.0",
+        "version": "5.1",
         "recipe": {
             "repo": "github.com/symfony/recipes-contrib",
             "branch": "master",
             "version": "3.0",
-            "ref": "e4763dc0b1cb323ae78d414ded0cd1ae914fe205"
+            "ref": "fd172e8feabf6b1c0818e18de90c2a3f82ea0a60"
         },
         "files": [
             "config/packages/algolia_search.yaml"
