@@ -404,17 +404,16 @@
         "version": "v5.1.2"
     },
     "symfony/routing": {
-        "version": "5.1",
+        "version": "5.3",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "master",
-            "version": "5.1",
-            "ref": "b4f3e7c95e38b606eef467e8a42a8408fc460c43"
+            "version": "5.3",
+            "ref": "44633353926a0382d7dfb0530922c5c0b30fae11"
         },
         "files": [
-            "config/packages/prod/routing.yaml",
-            "config/packages/routing.yaml",
-            "config/routes.yaml"
+            "config/routes.yaml",
+            "config/packages/routing.yaml"
         ]
     },
     "symfony/runtime": {
