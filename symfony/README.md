@@ -5,7 +5,7 @@ Algolia Symfony bundle was created by, and is maintained by [Algolia](https://gi
 ## Get started locally
 > requires :
 * [Composer](https://getcomposer.org/)
-* [PHP 7.1.3+](https://www.php.net/releases/index.php)
+* [PHP 7.4+](https://www.php.net/releases/index.php)
 
 ```bash
 # Install from Algolia's Playground from Github
@@ -28,7 +28,7 @@ php bin/console doctrine:migrations:migrate
 
 # Add your credential in .env
 ALGOLIA_APP_ID='YOUR APPLICATION ID'
-ALGOLIA_SECRET='YOUR ADMIN API KEY'
+ALGOLIA_API_KEY='YOUR ADMIN API KEY'
 
 # Fill you local database
 php bin/console doctrine:fixtures:load
