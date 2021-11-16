@@ -1,6 +1,8 @@
 # All available configuration can be found here:
 # https://www.algolia.com/doc/api-client/symfony/configuration/
 algolia_search:
+  # Don't index automatically DB updates https://www.algolia.com/doc/framework-integration/symfony/indexing/index-data-into-algolia/?client=php#indexing-automatically-via-doctrine-events
+  doctrineSubscribedEvents: []
   indices:
     - name: articles
       class: App\Entity\Article
