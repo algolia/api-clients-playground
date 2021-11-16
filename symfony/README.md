@@ -5,7 +5,7 @@ Algolia Symfony bundle was created by, and is maintained by [Algolia](https://gi
 ## Get started locally
 > requires :
 * [Composer](https://getcomposer.org/)
-* [PHP 7.4+](https://www.php.net/releases/index.php)
+* [PHP 7.2+](https://www.php.net/releases/index.php)
 
 ```bash
 # Install from Algolia's Playground from Github
