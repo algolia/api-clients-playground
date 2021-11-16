@@ -8,7 +8,7 @@
   ],
   "license": "MIT",
   "require": {
-    "php": "^7.4",
+    "php": "^7.2",
     "algolia/search-bundle": "^5.0",
     "composer/package-versions-deprecated": "1.11.99.4",
     "doctrine/doctrine-bundle": "^2",
