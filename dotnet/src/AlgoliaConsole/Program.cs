@@ -48,7 +48,7 @@ namespace AlgoliaConsole
             SearchIndex index = client.InitIndex("AlgoliaDotnetConsole");
 
             // Push data from Json
-            using (StreamReader re = File.OpenText("Datas/Actors.json"))
+            using (StreamReader re = File.OpenText("AlgoliaConsole/Datas/Actors.json"))
             using (JsonTextReader reader = new JsonTextReader(re))
             {
                 JArray batch = JArray.Load(reader);
