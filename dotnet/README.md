@@ -6,7 +6,7 @@ You can skip this part if you already have the .NET 7.x installed.
 
 ### .NET 7.x
 
-Download and install the .NET from [.NET Downloads](https://dotnet.microsoft.com/en-us/download). 
+Download and install .NET from [.NET Downloads](https://dotnet.microsoft.com/en-us/download). 
 
 If you have problems with the installation on MacOS, consult the [Known issues](https://github.com/dotnet/core/tree/main/release-notes/7.0) topic for the version you have installed.
 
