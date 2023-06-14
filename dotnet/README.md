@@ -2,13 +2,13 @@
 
 ## .NET environment setup
 
-You can skip this part if you already have the .NET Core 3.x framework installed.
+You can skip this part if you already have the .NET 7.x installed.
 
-### .NET Core SDK 3.x
+### .NET 7.x
 
-Download and install the .NET Core SDK from [.NET Downloads](https://www.microsoft.com/net/download/core). 
+Download and install .NET from [.NET Downloads](https://dotnet.microsoft.com/en-us/download). 
 
-If you have problems with the installation on MacOS, consult the [Known issues](https://github.com/dotnet/core/tree/master/release-notes/2.0) topic for the version you have installed.
+If you have problems with the installation on MacOS, consult the [Known issues](https://github.com/dotnet/core/blob/main/release-notes/7.0/known-issues.md) topic for the version you have installed.
 
 To check if dotnet is correctly installed :
 
@@ -19,7 +19,7 @@ dotnet --version
 You should have something like this depending on the version you have installed :
 
 ```shell
-3.XX.XX
+7.XX.XX
 ```
 
 If you have the following message `dotnet command not found`. Please run the following command :
@@ -52,5 +52,5 @@ dotnet build
 Then, run the project
 
 ```shell
-ALGOLIA_APPLICATION_ID=<YOUR_APP_ID> ALGOLIA_ADMIN_API_KEY=<YOUR_API_KEY> dotnet run
+ALGOLIA_APPLICATION_ID=<YOUR_APP_ID> ALGOLIA_ADMIN_API_KEY=<YOUR_API_KEY> dotnet run --project AlgoliaConsole
 ```
